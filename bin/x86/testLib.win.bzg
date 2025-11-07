@@ -1,0 +1,8 @@
+var result = loadNative("testLib.dll", "system_print");
+
+// returns truthy if at least one symbol was bound
+if (result) {
+    print("testLib loaded successfully.");
+} else {
+    print("Failed to load testLib.");
+}
